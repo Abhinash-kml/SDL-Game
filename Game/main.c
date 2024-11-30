@@ -1,11 +1,13 @@
 // Example program:
 // Using SDL3 to create an application window
 
+#include <stdlib.h>
 #include <SDL3/SDL.h>
 
 int main(int argc, char* argv[]) {
 
     SDL_Window* window;                    // Declare a pointer
+    SDL_Event event;
 
     SDL_Init(SDL_INIT_VIDEO);              // Initialize SDL3
 
@@ -25,6 +27,17 @@ int main(int argc, char* argv[]) {
     }
 
     // The window is open: could enter program loop here (see SDL_PollEvent())
+    while (SDL_PollEvent(&event))
+    {
+        switch (event.type)
+        {
+        case SDL_EVENT_QUIT:
+            exit(EXIT_SUCCESS);
+            break;
+        default:
+            break;
+        }
+    }
 
     SDL_Delay(10000);  // Pause execution for 3000 milliseconds, for example
 

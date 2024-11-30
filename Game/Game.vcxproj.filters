@@ -17,5 +17,37 @@
     <ClCompile Include="main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="draw.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="input.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="draw.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="init.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="defs.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="input.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="structs.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
