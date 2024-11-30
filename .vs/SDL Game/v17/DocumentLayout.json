@@ -54,8 +54,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 11,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -194,7 +198,7 @@
               "RelativeDocumentMoniker": "Game\\main.c",
               "ToolTip": "D:\\Backup\\Github Repository\\SDL-Game\\Game\\main.c",
               "RelativeToolTip": "Game\\main.c",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAACEAAAAcAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAB0AAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-11-30T08:22:24.405Z",
               "EditorCaption": ""
