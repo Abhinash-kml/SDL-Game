@@ -5,19 +5,29 @@
 #include "init.h"
 #include "draw.h"
 #include "input.h"
+#include "resources.h"
+#include "shutdown.h"
 
 int main(int argc, char* argv[]) {
 
     App game;
-    initSDL(&game);
+    bool bRunning = true;
 
-    while (1)
+    initSDL(&game);
+    if (!loadResources())
+    {
+        printf("Loading resources failed!");
+        bRunning = false;
+    }
+
+    while (bRunning)
     {
         prepareScene(&game);
-        doInput();
+        doInput(&bRunning);
         presentScene(&game);
-        SDL_Delay(16);
     }
+
+    shutdown(&game);
 
     return 0;
 }

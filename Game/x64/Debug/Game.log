@@ -1,5 +1,2 @@
-﻿  init.c
-  input.c
-  main.c
-  Generating Code...
+﻿  resources.c
   Game.vcxproj -> D:\Backup\Github Repository\SDL-Game\x64\Debug\Game.exe

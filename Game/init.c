@@ -8,7 +8,8 @@ void initSDL(App* app)
 {
 	int windowFlags = 0;
 	
-	if (SDL_Init(SDL_INIT_VIDEO) < 0)
+	// Initialize SDL in Video & Audio mode
+	if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_AUDIO) < 0)
 	{
 		printf("Couldn't initialize SDL: %s\n", SDL_GetError());
 		exit(EXIT_FAILURE);

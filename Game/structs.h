@@ -1,9 +1,16 @@
 #pragma once
 
-#include <SDL3/SDL.h>
+#include "common.h"
+
+typedef struct Resources
+{
+	SDL_Surface* images[MAX_IMAGES];
+	Mix_Chunk* sounds[MAX_SOUNDS];
+} Resources;
 
 typedef struct App
 {
 	SDL_Renderer* renderer;
 	SDL_Window* window;
+	Resources* resources;
 } App;

@@ -3,7 +3,7 @@
 #include "common.h"
 #include "input.h"
 
-void doInput()
+void doInput(bool* bRunning)
 {
 	SDL_Event event;
 
@@ -12,7 +12,7 @@ void doInput()
 		switch (event.type)
 		{
 		case SDL_EVENT_QUIT:
-			exit(EXIT_SUCCESS);
+			*bRunning = false;
 			break;
 		default:
 			break;

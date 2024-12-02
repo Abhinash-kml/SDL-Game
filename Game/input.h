@@ -1,3 +1,3 @@
 #pragma once
 
-void doInput();
+void doInput(bool* bRunning);

@@ -1,5 +1,6 @@
 #include "common.h"
 #include "draw.h"
+#include "resources.h"
 
 void prepareScene(App* app)
 {
@@ -9,5 +10,6 @@ void prepareScene(App* app)
 
 void presentScene(App* app)
 {
+	//SDL_BlitSurface()
 	SDL_RenderPresent(app->renderer);
 }

@@ -26,6 +26,12 @@
     <ClCompile Include="input.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="shutdown.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="resources.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -47,6 +53,12 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="structs.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="shutdown.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resources.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
