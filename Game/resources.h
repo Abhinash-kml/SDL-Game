@@ -1,3 +1,5 @@
 #pragma once
 
-int loadResources();
+#include "common.h"
+
+int loadResources(App* app);

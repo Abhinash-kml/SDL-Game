@@ -11,19 +11,33 @@
 int main(int argc, char* argv[]) {
 
     App game;
+    game.resources = malloc(sizeof(game.resources));
+    if (!game.resources) {
+        printf("Failed to allocate memory for resources\n");
+        return -1;
+    }
+
+    bool bInitialized = false;
     bool bRunning = true;
 
-    initSDL(&game);
-    if (!loadResources())
+    if (bInitialized = initSDL(&game))
     {
-        printf("Loading resources failed!");
+        if (!loadResources(&game))
+        {
+            printf("Loading resources failed!");
+            bRunning = false;
+        }
+    }
+    else
+    {
         bRunning = false;
     }
+
 
     while (bRunning)
     {
         prepareScene(&game);
-        doInput(&bRunning);
+        doInput(&bRunning, &game);
         presentScene(&game);
     }
 
