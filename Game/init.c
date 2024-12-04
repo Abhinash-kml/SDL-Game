@@ -27,6 +27,14 @@ bool initSDL(App* app)
 		exit(EXIT_FAILURE);
 	}
 
+	// Initialize Image loading
+	int imageFlags = IMG_INIT_PNG;
+	if (!(IMG_Init(imageFlags) & imageFlags))
+	{
+		SDL_Log("Unable to initialize SDL_Image | Error: %s", SDL_GetError());
+		return false;
+	}
+
 	// Set audio spec
 	SDL_AudioSpec audioSpec;
 	audioSpec.format = SDL_AUDIO_F32;

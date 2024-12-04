@@ -2,9 +2,17 @@
 
 #include "common.h"
 
+typedef struct Texture
+{
+	SDL_Texture* m_Texture;
+	int m_height;
+	int m_width;
+	char m_path[128];
+} Texture;
+
 typedef struct Resources
 {
-	SDL_Surface* images[MAX_IMAGES];
+	Texture* images[MAX_IMAGES];
 	Mix_Chunk* sounds[MAX_SOUNDS];
 } Resources;
 
