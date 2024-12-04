@@ -63,8 +63,8 @@ bool loadTexture(App* app, const char* name, Texture* newTexture)
 	}
 
 	// Set texture dimensions
-	newTexture->m_height = loadedSurface->h;
-	newTexture->m_width = loadedSurface->w;
+	(*newTexture).m_height = loadedSurface->h;
+	(*newTexture).m_width = loadedSurface->w;
 
 	// Free surface
 	SDL_DestroySurface(loadedSurface);

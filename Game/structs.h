@@ -5,8 +5,8 @@
 typedef struct Texture
 {
 	SDL_Texture* m_Texture;
-	int m_height;
-	int m_width;
+	float m_height;
+	float m_width;
 	char m_path[128];
 } Texture;
 

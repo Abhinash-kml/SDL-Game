@@ -4,7 +4,7 @@
 void renderTexture(App* app, Texture* texture, float x, float y)
 {
 	// Set texture position
-	SDL_FRect destinationRectable = { x, y, 360.f, 360.f };
+	SDL_FRect destinationRectable = { x, y, texture->m_Texture->w,  texture->m_Texture->h };
 
 	// Render the texture
 	SDL_RenderTexture(app->renderer, texture->m_Texture, NULL, &destinationRectable);
