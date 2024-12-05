@@ -77,6 +77,7 @@ int loadResources(App* app)
 {
 	/*for (size_t i = 0; i < MAX_IMAGES; ++i)
 	{*/
+	app->resources->images[0] = malloc(sizeof(Texture));
 		loadTexture(app, images[0], &app->resources->images[0]);
 
 		if (!(&app->resources->images[0]))

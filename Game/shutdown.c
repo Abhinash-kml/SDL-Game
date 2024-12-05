@@ -24,4 +24,7 @@ void shutdown(App* app)
 	IMG_Quit();
 	Mix_Quit();
 	SDL_Quit();
+
+	free(app->resources);
+	free(app->mouse_data);
 }

@@ -16,6 +16,14 @@ typedef struct Resources
 	Mix_Chunk* sounds[MAX_SOUNDS];
 } Resources;
 
+typedef struct MouseData
+{
+	float x;
+	float y;
+	float deltaX;
+	float deltaY;
+} MouseData;
+
 typedef struct App
 {
 	SDL_Renderer* renderer;
@@ -23,4 +31,5 @@ typedef struct App
 	Resources* resources;
 	SDL_AudioDeviceID audioDeviceID;
 	int audioChannelCount;
+	MouseData *mouse_data;
 } App;

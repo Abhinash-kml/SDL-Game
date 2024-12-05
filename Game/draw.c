@@ -19,6 +19,6 @@ void prepareScene(App* app)
 void presentScene(App* app)
 {
 	//SDL_BlitSurface()
-	renderTexture(app, &app->resources->images[0], 0.f, 0.f);
+	renderTexture(app, &app->resources->images[0], app->mouse_data->x - app->mouse_data->deltaX, app->mouse_data->y - app->mouse_data->deltaY);
 	SDL_RenderPresent(app->renderer);
 }

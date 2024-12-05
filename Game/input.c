@@ -26,7 +26,23 @@ void doInput(bool* bRunning, App* app)
 			case SDLK_3:
 				Mix_PlayChannel(CHANNEL_HIGH, app->resources->sounds[2], 0);
 				break;
+			case SDLK_LEFT:
+				app->mouse_data->deltaX -= 1.f;
+				break;
+			case SDLK_RIGHT:
+				app->mouse_data->deltaX += 1.f;
+				break;
+			case SDLK_UP:
+				app->mouse_data->deltaY += 1.f;
+				break;
+			case SDLK_DOWN:
+				app->mouse_data->deltaY -= 1.f;
+				break;
 			}
+		case SDL_EVENT_MOUSE_MOTION:
+			SDL_GetMouseState(&app->mouse_data->x, &app->mouse_data->y);
+			printf("X = %f | Y = %f\n", app->mouse_data->x, app->mouse_data->y);
+			break;
 		default:
 			break;
 		}
