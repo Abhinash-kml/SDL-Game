@@ -8,13 +8,14 @@ typedef struct Texture
 	float m_height;
 	float m_width;
 	char m_path[128];
-} Texture;
+} texture_t;
 
 typedef struct Resources
 {
-	Texture* images[MAX_IMAGES];
+	texture_t* textures[MAX_IMAGES];
 	Mix_Chunk* sounds[MAX_SOUNDS];
-} Resources;
+	Mix_Music* songs[MAX_SONGS];
+} resources_t;
 
 typedef struct MouseData
 {
@@ -22,14 +23,14 @@ typedef struct MouseData
 	float y;
 	float deltaX;
 	float deltaY;
-} MouseData;
+} mouse_data_t;
 
 typedef struct App
 {
 	SDL_Renderer* renderer;
 	SDL_Window* window;
-	Resources* resources;
-	SDL_AudioDeviceID audioDeviceID;
-	int audioChannelCount;
-	MouseData *mouse_data;
-} App;
+	resources_t* resources;
+	SDL_AudioDeviceID audio_device_id;
+	int audio_channel_count;
+	mouse_data_t* mouse_data;
+} app_t;

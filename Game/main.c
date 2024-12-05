@@ -8,37 +8,41 @@
 #include "resources.h"
 #include "shutdown.h"
 
-int main(int argc, char* argv[]) {
-
-    App game;
-    game.resources = (Resources*)malloc(sizeof(game.resources));
-    if (!game.resources) {
+int main(int argc, char* argv[]) 
+{
+    app_t game;
+    game.resources = (resources_t*)malloc(sizeof(game.resources));
+    if (!game.resources) 
+    {
         printf("Failed to allocate memory for resources\n");
         return -1;
     }
-    game.mouse_data = (MouseData*)malloc(sizeof(game.mouse_data));
-    if (!game.mouse_data) {
+    game.mouse_data = (mouse_data_t*)malloc(sizeof(game.mouse_data));
+    if (!game.mouse_data) 
+    {
         printf("Failed to allocate memory for mouse data\n");
         return -1;
     }
     game.mouse_data->deltaX = 180.f;
     game.mouse_data->deltaY = 180.f;
-    for (size_t i = 0; i < MAX_IMAGES; ++i) {
-        game.resources->images[i] = (Texture*)malloc(sizeof(Texture));
-        if (game.resources->images[i]) {
-            game.resources->images[i]->m_Texture = NULL; // Initialize the SDL_Texture pointer
-            game.resources->images[i]->m_height = 0.0f;  // Default height
-            game.resources->images[i]->m_width = 0.0f;   // Default width
-            game.resources->images[i]->m_path[0] = '\0'; // Initialize path to empty string
+    for (size_t i = 0; i < MAX_IMAGES; ++i) 
+    {
+        game.resources->textures[i] = (texture_t*)malloc(sizeof(texture_t));
+        if (game.resources->textures[i]) 
+        {
+            game.resources->textures[i]->m_Texture = NULL; // Initialize the SDL_Texture pointer
+            game.resources->textures[i]->m_height = 0.0f;  // Default height
+            game.resources->textures[i]->m_width = 0.0f;   // Default width
+            game.resources->textures[i]->m_path[0] = '\0'; // Initialize path to empty string
         }
     }
 
     bool bInitialized = false;
     bool bRunning = true;
 
-    if (bInitialized = initSDL(&game))
+    if (bInitialized = init_SDL(&game))
     {
-        if (!loadResources(&game))
+        if (!load_resources(&game))
         {
             printf("Loading resources failed!");
             bRunning = false;
@@ -52,9 +56,9 @@ int main(int argc, char* argv[]) {
 
     while (bRunning)
     {
-        prepareScene(&game);
-        doInput(&bRunning, &game);
-        presentScene(&game);
+        prepare_scene(&game);
+        process_input(&bRunning, &game);
+        present_scene(&game);
     }
 
     shutdown(&game);

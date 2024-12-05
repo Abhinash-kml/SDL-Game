@@ -2,4 +2,4 @@
 
 #include "common.h"
 
-bool initSDL(App* app);
+bool init_SDL(app_t* app);

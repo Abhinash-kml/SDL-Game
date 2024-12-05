@@ -11,7 +11,12 @@ const char* sounds[MAX_SOUNDS] = {
 	"sounds/sound3.wav"
 };
 
-void destroyTexture(Texture* texture)
+const char* songs[MAX_SONGS] = {
+	"songs/round1.mp3",
+	"songs/round2.mp3"
+};
+
+void destroy_texture(texture_t* texture)
 {	
 	if (texture && texture->m_Texture)
 	{
@@ -22,23 +27,23 @@ void destroyTexture(Texture* texture)
 	}
 }
 
-bool loadTexture(App* app, const char* name, Texture* newTexture) 
+bool load_texture(app_t* app, const char* name, texture_t* new_texture) 
 {
 	// Ensure app, resources, and renderer are valid
-	if (!app || !app->resources || !app->resources->images || !app->renderer) 
+	if (!app || !app->resources || !app->resources->textures || !app->renderer) 
 	{
 		printf("Invalid application state.\n");
 		return false;
 	}
 
-	Texture* textures = app->resources->images;
+	texture_t* textures = app->resources->textures;
 
 	// Destroy texture if it already exists
 	for (size_t i = 0; i < MAX_IMAGES; ++i) 
 	{
 		if (strcmp(textures[i].m_path, name) == 0) 
 		{
-			destroyTexture(&textures[i]);
+			destroy_texture(&textures[i]);
 			break; // Destroy only the first matching texture
 		}
 	}
@@ -47,40 +52,40 @@ bool loadTexture(App* app, const char* name, Texture* newTexture)
 	strcpy_s(textures[0].m_path, sizeof(textures[0].m_path), name);
 
 	// Load surface
-	SDL_Surface* loadedSurface = IMG_Load(name);
-	if (!loadedSurface) {
+	SDL_Surface* loaded_surface = IMG_Load(name);
+	if (!loaded_surface) {
 		printf("Unable to load image %s | Error: %s\n", name, SDL_GetError());
 		return false;
 	}
 
 	// Create texture from surface
-	newTexture->m_Texture = SDL_CreateTextureFromSurface(app->renderer, loadedSurface);
-	if (!newTexture->m_Texture) 
+	new_texture->m_Texture = SDL_CreateTextureFromSurface(app->renderer, loaded_surface);
+	if (!new_texture->m_Texture) 
 	{
 		printf("Unable to create texture from loaded pixels for %s | Error: %s\n", name, SDL_GetError());
-		SDL_DestroySurface(loadedSurface);
+		SDL_DestroySurface(loaded_surface);
 		return false;
 	}
 
 	// Set texture dimensions
-	(*newTexture).m_height = loadedSurface->h;
-	(*newTexture).m_width = loadedSurface->w;
+	(*new_texture).m_height = loaded_surface->h;
+	(*new_texture).m_width = loaded_surface->w;
 
 	// Free surface
-	SDL_DestroySurface(loadedSurface);
+	SDL_DestroySurface(loaded_surface);
 
 	return true;
 }
 
 
-int loadResources(App* app)
+int load_resources(app_t* app)
 {
 	/*for (size_t i = 0; i < MAX_IMAGES; ++i)
 	{*/
-	app->resources->images[0] = malloc(sizeof(Texture));
-		loadTexture(app, images[0], &app->resources->images[0]);
+	app->resources->textures[0] = malloc(sizeof(texture_t));
+		load_texture(app, images[0], &app->resources->textures[0]);
 
-		if (!(&app->resources->images[0]))
+		if (!(&app->resources->textures[0]))
 		{
 			printf("SDL Images: Couldn't load image %s, error %s", images[0], SDL_GetError());
 			return 0;
@@ -97,7 +102,7 @@ int loadResources(App* app)
 		}
 	}
 
-	if ((app->audioChannelCount = Mix_AllocateChannels(MAX_AUDIO_CHANNELS)) != MAX_AUDIO_CHANNELS)
+	if ((app->audio_channel_count = Mix_AllocateChannels(MAX_AUDIO_CHANNELS)) != MAX_AUDIO_CHANNELS)
 	{
 		SDL_Log("Unable to allocate channels. SDL Mixer error: %s", SDL_GetError());
 		return 0;

@@ -3,12 +3,12 @@
 #include "common.h"
 #include "shutdown.h"
 
-void destroyTexture(Texture* texture);
+void destroy_texture(texture_t* texture);
 
-void shutdown(App* app)
+void shutdown(app_t* app)
 {
 	for (size_t i = 0; i < MAX_IMAGES; ++i)
-		destroyTexture(app->resources->images[i]);
+		destroy_texture(app->resources->textures[i]);
 		
 	for (size_t i = 0; i < MAX_SOUNDS; ++i)
 		Mix_FreeChunk(app->resources->sounds[i]);
@@ -17,7 +17,7 @@ void shutdown(App* app)
 		Mix_FreeMusic(musics[i]);*/
 
 	Mix_CloseAudio();
-	SDL_CloseAudioDevice(app->audioDeviceID);
+	SDL_CloseAudioDevice(app->audio_device_id);
 
 	SDL_DestroyWindow(app->window);
 	SDL_DestroyRenderer(app->renderer);

@@ -2,8 +2,8 @@
 
 #include "common.h"
 
-void destroyTexture(Texture* texture);
+void destroy_texture(texture_t* texture);
 
-bool loadTexture(App* app, const char* name, Texture* newTexture);
+bool load_texture(app_t* app, const char* name, texture_t* newTexture);
 
-int loadResources(App* app);
+int load_resources(app_t* app);

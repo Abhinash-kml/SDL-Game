@@ -1,3 +1,3 @@
 #pragma once
 
-void shutdown(App* app);
+void shutdown(app_t* app);

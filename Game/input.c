@@ -3,7 +3,7 @@
 #include "common.h"
 #include "input.h"
 
-void doInput(bool* bRunning, App* app)
+void process_input(bool* bRunning, app_t* app)
 {
 	SDL_Event event; 
 

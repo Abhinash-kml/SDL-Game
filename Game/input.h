@@ -1,4 +1,4 @@
 #pragma once
 #include "common.h"
 
-void doInput(bool* bRunning, App* app);
+void process_input(bool* bRunning, app_t* app);

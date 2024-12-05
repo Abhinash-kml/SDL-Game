@@ -24,7 +24,14 @@ enum sound_channels
 	MAX_AUDIO_CHANNELS
 };
 
-extern const char* images[MAX_IMAGES];
+enum songs
+{
+	SONG_BACKGROUND = 0,
+	SONG_MENU,
+	MAX_SONGS
+};
 
+extern const char* images[MAX_IMAGES];
 extern const char* sounds[MAX_SOUNDS];
+extern const char* songs[MAX_SONGS];
 

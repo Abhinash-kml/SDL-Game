@@ -1,7 +1,7 @@
 #pragma once
 
-void renderTexture(App* app, Texture* texture, float x, float y);
+void render_texture(app_t* app, texture_t* texture, float x, float y, double degree);
 
-void prepareScene(App* app);
+void prepare_scene(app_t* app);
 
-void presentScene(App* app);
+void present_scene(app_t* app);
