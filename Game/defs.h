@@ -5,7 +5,8 @@
 
 enum images
 {
-	IMAGE_PLAYER = 0,
+	IMAGE_BACKGROUND = 0,
+	IMAGE_PLAYER,
 	MAX_IMAGES
 };
 

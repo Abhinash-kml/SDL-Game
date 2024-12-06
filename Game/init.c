@@ -6,7 +6,7 @@
 
 bool init_SDL(app_t* app)
 {
-	int window_flags = SDL_WINDOW_RESIZABLE;
+	int window_flags = 0;
 	
 	// Initialize SDL in Video & Audio mode
 	if (!SDL_Init(SDL_INIT_VIDEO | SDL_INIT_AUDIO))
@@ -26,6 +26,9 @@ bool init_SDL(app_t* app)
 		printf("Failed to create SDL Renderer. Error: %s\n", SDL_GetError());
 		exit(EXIT_FAILURE);
 	}
+
+	if (!SDL_CreateWindowAndRenderer("Space Wars", SCREEN_WIDTH, SCREEN_HEIGHT, window_flags, &app->window, &app->renderer))
+		return false;
 
 	// Initialize Image loading
 	int image_flags = IMG_INIT_PNG;

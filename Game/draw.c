@@ -13,16 +13,13 @@ void render_texture(app_t* app, texture_t* texture, float x, float y, double deg
 
 void prepare_scene(app_t* app)
 {
-	SDL_SetRenderDrawColor(app->renderer, 96, 128, 255, 255);
+	SDL_SetRenderDrawColor(app->renderer, 0, 0, 0, 255);
 	SDL_RenderClear(app->renderer);
 }
 
 void present_scene(app_t* app)
 {
-	static float angle = 0;
-	angle += 0.05;
-	//if (angle > 2 * 3.14) angle -= 2 * 3.14;
-	//SDL_BlitSurface()
-	render_texture(app, &app->resources->textures[0], app->mouse_data->x /*- app->mouse_data->deltaX*/, app->mouse_data->y /*- app->mouse_data->deltaY*/, angle);
+	SDL_RenderTexture(app->renderer, &app->resources->textures[IMAGE_BACKGROUND]->m_Texture, NULL, NULL);
+	render_texture(app, &app->resources->textures[IMAGE_PLAYER], app->mouse_data->x - 64.f, app->mouse_data->y - 64.f, 0.0);
 	SDL_RenderPresent(app->renderer);
 }

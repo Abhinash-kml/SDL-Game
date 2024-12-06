@@ -2,7 +2,8 @@
 #include "common.h"
 
 const char* images[MAX_IMAGES] = {
-	"textures/example.png"
+	"textures/background.png",
+	"textures/ship.png"
 };
 
 const char* sounds[MAX_SOUNDS] = {
@@ -49,7 +50,7 @@ bool load_texture(app_t* app, const char* name, texture_t* new_texture)
 	}
 
 	// Copy the name to texture path (ensure buffer size matches)
-	strcpy_s(textures[0].m_path, sizeof(textures[0].m_path), name);
+	strcpy_s(new_texture->m_path, sizeof(new_texture->m_path), name);
 
 	// Load surface
 	SDL_Surface* loaded_surface = IMG_Load(name);
@@ -68,8 +69,8 @@ bool load_texture(app_t* app, const char* name, texture_t* new_texture)
 	}
 
 	// Set texture dimensions
-	(*new_texture).m_height = loaded_surface->h;
-	(*new_texture).m_width = loaded_surface->w;
+	new_texture->m_height = loaded_surface->h;
+	new_texture->m_width = loaded_surface->w;
 
 	// Free surface
 	SDL_DestroySurface(loaded_surface);
@@ -80,17 +81,17 @@ bool load_texture(app_t* app, const char* name, texture_t* new_texture)
 
 int load_resources(app_t* app)
 {
-	/*for (size_t i = 0; i < MAX_IMAGES; ++i)
-	{*/
-	app->resources->textures[0] = malloc(sizeof(texture_t));
-		load_texture(app, images[0], &app->resources->textures[0]);
+	for (size_t i = 0; i < MAX_IMAGES; ++i)
+	{
+		//app->resources->textures[0] = malloc(sizeof(texture_t));
+		load_texture(app, images[i], &app->resources->textures[i]);
 
-		if (!(&app->resources->textures[0]))
+		if (!(&app->resources->textures[i]))
 		{
-			printf("SDL Images: Couldn't load image %s, error %s", images[0], SDL_GetError());
+			printf("SDL Images: Couldn't load image %s, error %s", images[i], SDL_GetError());
 			return 0;
 		}
-	//}
+	}
 
 	for (size_t i = 0; i < MAX_SOUNDS; ++i)
 	{
