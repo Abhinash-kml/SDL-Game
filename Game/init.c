@@ -15,20 +15,11 @@ bool init_SDL(app_t* app)
 		exit(EXIT_FAILURE);
 	}
 
-	if (!(app->window = SDL_CreateWindow("My Game", SCREEN_WIDTH, SCREEN_HEIGHT, window_flags)))
-	{
-		printf("Failed to create window of width: %i, height: %i. Error: %s\n", SCREEN_WIDTH, SCREEN_HEIGHT, SDL_GetError());
-		exit(EXIT_FAILURE);
-	}
-	
-	if (!(app->renderer = SDL_CreateRenderer(app->window, NULL)))
-	{
-		printf("Failed to create SDL Renderer. Error: %s\n", SDL_GetError());
-		exit(EXIT_FAILURE);
-	}
-
 	if (!SDL_CreateWindowAndRenderer("Space Wars", SCREEN_WIDTH, SCREEN_HEIGHT, window_flags, &app->window, &app->renderer))
+	{
+		printf("Fialed to create SDL Window / Renderer | Error: %s", SDL_GetError());
 		return false;
+	}
 
 	// Initialize Image loading
 	int image_flags = IMG_INIT_PNG;
@@ -37,6 +28,24 @@ bool init_SDL(app_t* app)
 		SDL_Log("Unable to initialize SDL_Image | Error: %s", SDL_GetError());
 		return false;
 	}
+
+	// Initialize TTF Fonts loading
+	if (!TTF_Init())
+	{
+		SDL_Log("Unable to initialize SDL_TTF | Error: %s", SDL_GetError());
+		return false;
+	}
+
+	// Try to load a font
+	TTF_Font* font = TTF_OpenFont("fonts/Roboto/Roboto-Bold.ttf", 300);
+	if (!font)
+	{
+		printf("Unable to load custom fonts: Error: %s", SDL_GetError());
+		return false;
+	}
+
+	// Assign loaded font if successfully loaded
+	app->font = font;
 
 	// Set audio spec
 	SDL_AudioSpec audio_spec;

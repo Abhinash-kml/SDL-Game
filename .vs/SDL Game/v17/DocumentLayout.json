@@ -7,28 +7,40 @@
       "RelativeMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|solutionrelative:Game\\draw.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|D:\\Backup\\Github Repository\\SDL-Game\\Game\\resources.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|solutionrelative:Game\\resources.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|D:\\Backup\\Github Repository\\SDL-Game\\Game\\defs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|solutionrelative:Game\\defs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|D:\\Backup\\Github Repository\\SDL-Game\\Game\\init.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|solutionrelative:Game\\init.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|D:\\Backup\\Github Repository\\SDL-Game\\Game\\draw.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|solutionrelative:Game\\draw.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|D:\\Backup\\Github Repository\\SDL-Game\\Game\\input.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|solutionrelative:Game\\input.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|D:\\Backup\\Github Repository\\SDL-Game\\Game\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|solutionrelative:Game\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|D:\\Backup\\Github Repository\\SDL-Game\\Game\\init.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|solutionrelative:Game\\init.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|D:\\Backup\\Github Repository\\SDL-Game\\Game\\shutdown.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|solutionrelative:Game\\shutdown.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|D:\\Backup\\Github Repository\\SDL-Game\\Game\\input.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|solutionrelative:Game\\input.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|D:\\Backup\\Github Repository\\SDL-Game\\Game\\resources.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|solutionrelative:Game\\resources.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|D:\\Backup\\Github Repository\\SDL-Game\\Game\\structs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|solutionrelative:Game\\structs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|D:\\Backup\\Github Repository\\SDL-Game\\Game\\common.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|solutionrelative:Game\\common.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|D:\\Backup\\Github Repository\\SDL-Game\\Game\\defs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|solutionrelative:Game\\defs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|D:\\Backup\\Github Repository\\SDL-Game\\Game\\input.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -39,24 +51,12 @@
       "RelativeMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|solutionrelative:Game\\shutdown.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|D:\\Backup\\Github Repository\\SDL-Game\\Game\\shutdown.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|solutionrelative:Game\\shutdown.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|D:\\Backup\\Github Repository\\SDL-Game\\Game\\init.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|solutionrelative:Game\\init.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|D:\\Backup\\Github Repository\\SDL-Game\\Game\\resources.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|solutionrelative:Game\\resources.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|D:\\Backup\\Github Repository\\SDL-Game\\Game\\structs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|solutionrelative:Game\\structs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|D:\\Backup\\Github Repository\\SDL-Game\\Game\\common.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|solutionrelative:Game\\common.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -78,13 +78,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 8,
               "Title": "common.h",
               "DocumentMoniker": "D:\\Backup\\Github Repository\\SDL-Game\\Game\\common.h",
               "RelativeDocumentMoniker": "Game\\common.h",
               "ToolTip": "D:\\Backup\\Github Repository\\SDL-Game\\Game\\common.h",
               "RelativeToolTip": "Game\\common.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAARAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-12-02T10:30:18.976Z",
               "EditorCaption": ""
@@ -104,20 +104,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 7,
               "Title": "structs.h",
               "DocumentMoniker": "D:\\Backup\\Github Repository\\SDL-Game\\Game\\structs.h",
               "RelativeDocumentMoniker": "Game\\structs.h",
               "ToolTip": "D:\\Backup\\Github Repository\\SDL-Game\\Game\\structs.h",
               "RelativeToolTip": "Game\\structs.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAjAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACMAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-12-02T10:30:03.173Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "resources.h",
               "DocumentMoniker": "D:\\Backup\\Github Repository\\SDL-Game\\Game\\resources.h",
               "RelativeDocumentMoniker": "Game\\resources.h",
@@ -125,38 +125,37 @@
               "RelativeToolTip": "Game\\resources.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-02T10:03:08.706Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-02T10:03:08.706Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "resources.c",
               "DocumentMoniker": "D:\\Backup\\Github Repository\\SDL-Game\\Game\\resources.c",
               "RelativeDocumentMoniker": "Game\\resources.c",
               "ToolTip": "D:\\Backup\\Github Repository\\SDL-Game\\Game\\resources.c",
               "RelativeToolTip": "Game\\resources.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAUAAAA",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAAAAUAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-12-04T11:18:11.512Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "init.c",
               "DocumentMoniker": "D:\\Backup\\Github Repository\\SDL-Game\\Game\\init.c",
               "RelativeDocumentMoniker": "Game\\init.c",
               "ToolTip": "D:\\Backup\\Github Repository\\SDL-Game\\Game\\init.c",
               "RelativeToolTip": "Game\\init.c",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABsAAAACAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-12-02T08:41:33.673Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "init.h",
               "DocumentMoniker": "D:\\Backup\\Github Repository\\SDL-Game\\Game\\init.h",
               "RelativeDocumentMoniker": "Game\\init.h",
@@ -164,25 +163,24 @@
               "RelativeToolTip": "Game\\init.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-02T08:05:37.946Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-02T08:05:37.946Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
               "Title": "shutdown.c",
               "DocumentMoniker": "D:\\Backup\\Github Repository\\SDL-Game\\Game\\shutdown.c",
               "RelativeDocumentMoniker": "Game\\shutdown.c",
               "ToolTip": "D:\\Backup\\Github Repository\\SDL-Game\\Game\\shutdown.c",
               "RelativeToolTip": "Game\\shutdown.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-12-02T08:56:30.691Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "shutdown.h",
               "DocumentMoniker": "D:\\Backup\\Github Repository\\SDL-Game\\Game\\shutdown.h",
               "RelativeDocumentMoniker": "Game\\shutdown.h",
@@ -190,12 +188,11 @@
               "RelativeToolTip": "Game\\shutdown.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-02T08:56:42.927Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-02T08:56:42.927Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "input.h",
               "DocumentMoniker": "D:\\Backup\\Github Repository\\SDL-Game\\Game\\input.h",
               "RelativeDocumentMoniker": "Game\\input.h",
@@ -203,31 +200,30 @@
               "RelativeToolTip": "Game\\input.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-02T08:30:30.463Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-02T08:30:30.463Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "input.c",
               "DocumentMoniker": "D:\\Backup\\Github Repository\\SDL-Game\\Game\\input.c",
               "RelativeDocumentMoniker": "Game\\input.c",
               "ToolTip": "D:\\Backup\\Github Repository\\SDL-Game\\Game\\input.c",
               "RelativeToolTip": "Game\\input.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAACAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACAAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-11-30T10:13:13.777Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "draw.h",
               "DocumentMoniker": "D:\\Backup\\Github Repository\\SDL-Game\\Game\\draw.h",
               "RelativeDocumentMoniker": "Game\\draw.h",
               "ToolTip": "D:\\Backup\\Github Repository\\SDL-Game\\Game\\draw.h",
               "RelativeToolTip": "Game\\draw.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAfAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-12-02T08:28:40.69Z",
               "EditorCaption": ""
@@ -240,14 +236,14 @@
               "RelativeDocumentMoniker": "Game\\draw.c",
               "ToolTip": "D:\\Backup\\Github Repository\\SDL-Game\\Game\\draw.c",
               "RelativeToolTip": "Game\\draw.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA1AAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAuwCcAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-11-30T10:11:56.706Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "defs.h",
               "DocumentMoniker": "D:\\Backup\\Github Repository\\SDL-Game\\Game\\defs.h",
               "RelativeDocumentMoniker": "Game\\defs.h",
@@ -255,8 +251,7 @@
               "RelativeToolTip": "Game\\defs.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-30T10:12:56.182Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-30T10:12:56.182Z"
             }
           ]
         }

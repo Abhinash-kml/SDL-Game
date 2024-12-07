@@ -33,4 +33,5 @@ typedef struct App
 	SDL_AudioDeviceID audio_device_id;
 	int audio_channel_count;
 	mouse_data_t* mouse_data;
+	TTF_Font* font;
 } app_t;

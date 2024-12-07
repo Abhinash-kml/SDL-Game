@@ -16,6 +16,8 @@ void shutdown(app_t* app)
 	/*for (size_t i = 0; i < MAX_MUSIC; ++i)
 		Mix_FreeMusic(musics[i]);*/
 
+	TTF_CloseFont(app->font);
+
 	Mix_CloseAudio();
 	SDL_CloseAudioDevice(app->audio_device_id);
 
@@ -23,6 +25,7 @@ void shutdown(app_t* app)
 	SDL_DestroyRenderer(app->renderer);
 	IMG_Quit();
 	Mix_Quit();
+	TTF_Quit();
 	SDL_Quit();
 
 	free(app->resources);

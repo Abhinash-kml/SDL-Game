@@ -5,4 +5,5 @@ D:\Backup\Github Repository\SDL-Game\Game\draw.c(22,89): warning C4047: 'functio
 D:\Backup\Github Repository\SDL-Game\Game\draw.c(22,35): warning C4024: 'SDL_RenderTexture': different types for formal and actual parameter 2
 D:\Backup\Github Repository\SDL-Game\Game\draw.c(23,61): warning C4047: 'function': 'texture_t *' differs in levels of indirection from 'texture_t **'
 D:\Backup\Github Repository\SDL-Game\Game\draw.c(23,22): warning C4024: 'render_texture': different types for formal and actual parameter 2
+D:\Backup\Github Repository\SDL-Game\Game\draw.c(52,57): warning C4133: 'function': incompatible types - from 'SDL_Rect *' to 'const SDL_FRect *'
   Game.vcxproj -> D:\Backup\Github Repository\SDL-Game\x64\Debug\Game.exe

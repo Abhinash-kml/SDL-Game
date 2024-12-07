@@ -27,16 +27,16 @@ void process_input(bool* bRunning, app_t* app)
 				Mix_PlayChannel(CHANNEL_HIGH, app->resources->sounds[2], 0);
 				break;
 			case SDLK_LEFT:
-				app->mouse_data->deltaX -= 1.f;
+				app->mouse_data->deltaX -= 10.f;
 				break;
 			case SDLK_RIGHT:
-				app->mouse_data->deltaX += 1.f;
+				app->mouse_data->deltaX += 10.f;
 				break;
 			case SDLK_UP:
-				app->mouse_data->deltaY += 1.f;
+				app->mouse_data->deltaY += 10.f;
 				break;
 			case SDLK_DOWN:
-				app->mouse_data->deltaY -= 1.f;
+				app->mouse_data->deltaY -= 10.f;
 				break;
 			}
 		case SDL_EVENT_MOUSE_MOTION:

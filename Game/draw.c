@@ -21,5 +21,30 @@ void present_scene(app_t* app)
 {
 	SDL_RenderTexture(app->renderer, &app->resources->textures[IMAGE_BACKGROUND]->m_Texture, NULL, NULL);
 	render_texture(app, &app->resources->textures[IMAGE_PLAYER], app->mouse_data->x - 64.f, app->mouse_data->y - 64.f, 0.0);
+	render_font(app, "HELLO WORLD");
 	SDL_RenderPresent(app->renderer);
+}
+
+void render_font(app_t* app, const char* message)
+{
+	SDL_Color color = { 155, 130, 255, 255 };
+	SDL_Surface* surface = TTF_RenderText_Blended(app->font, message, 0, color);
+	if (!surface)
+	{
+		printf("Couldn't create surface from TTF font\n");
+		return;
+	}
+
+	SDL_Texture* texture = SDL_CreateTextureFromSurface(app->renderer, surface);
+	if (!texture)
+	{
+		printf("Couldn't create texture from surface created by font\n");
+		return;
+	}
+
+	SDL_Rect dest_rect = { 0, 0, surface->w, surface->h };
+	SDL_DestroySurface(surface);
+
+	printf("%i | %i\n", dest_rect.w, dest_rect.h);	// Text rendering doesn't work with destination rectangle
+	SDL_RenderTexture(app->renderer, texture, NULL, NULL);	// FIXME: Fix me
 }

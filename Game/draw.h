@@ -5,3 +5,5 @@ void render_texture(app_t* app, texture_t* texture, float x, float y, double deg
 void prepare_scene(app_t* app);
 
 void present_scene(app_t* app);
+
+void render_font(app_t* app, const char* message);
