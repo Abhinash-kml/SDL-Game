@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "D:\\Backup\\Github Repository\\SDL-Game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|D:\\Backup\\Github Repository\\SDL-Game\\Game\\list.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|solutionrelative:Game\\list.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|D:\\Backup\\Github Repository\\SDL-Game\\Game\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|solutionrelative:Game\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|D:\\Backup\\Github Repository\\SDL-Game\\Game\\list.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|solutionrelative:Game\\list.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|D:\\Backup\\Github Repository\\SDL-Game\\Game\\list.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|solutionrelative:Game\\list.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|D:\\Backup\\Github Repository\\SDL-Game\\Game\\common.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|solutionrelative:Game\\common.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|D:\\Backup\\Github Repository\\SDL-Game\\Game\\structs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -27,16 +35,8 @@
       "RelativeMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|solutionrelative:Game\\spawn_manager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|D:\\Backup\\Github Repository\\SDL-Game\\Game\\common.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|solutionrelative:Game\\common.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|D:\\Backup\\Github Repository\\SDL-Game\\Game\\draw.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|solutionrelative:Game\\draw.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|D:\\Backup\\Github Repository\\SDL-Game\\Game\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|solutionrelative:Game\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3B1BB339-A9C9-4E42-8C3A-F027DEEE52DF}|Game\\Game.vcxproj|D:\\Backup\\Github Repository\\SDL-Game\\Game\\draw.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -82,7 +82,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -94,13 +94,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "list.h",
               "DocumentMoniker": "D:\\Backup\\Github Repository\\SDL-Game\\Game\\list.h",
               "RelativeDocumentMoniker": "Game\\list.h",
               "ToolTip": "D:\\Backup\\Github Repository\\SDL-Game\\Game\\list.h",
               "RelativeToolTip": "Game\\list.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAOAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAiwA8AAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-12-08T09:57:08.657Z",
               "EditorCaption": ""
@@ -113,14 +113,14 @@
               "RelativeDocumentMoniker": "Game\\list.c",
               "ToolTip": "D:\\Backup\\Github Repository\\SDL-Game\\Game\\list.c",
               "RelativeToolTip": "Game\\list.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAOAAAA",
+              "ViewState": "AQIAAHcAAAAAAAAAAADgv4gAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-12-08T09:55:56.47Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "spawn_manager.h",
               "DocumentMoniker": "D:\\Backup\\Github Repository\\SDL-Game\\Game\\spawn_manager.h",
               "RelativeDocumentMoniker": "Game\\spawn_manager.h",
@@ -133,7 +133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "spawn_manager.c",
               "DocumentMoniker": "D:\\Backup\\Github Repository\\SDL-Game\\Game\\spawn_manager.c",
               "RelativeDocumentMoniker": "Game\\spawn_manager.c",
@@ -146,32 +146,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "common.h",
               "DocumentMoniker": "D:\\Backup\\Github Repository\\SDL-Game\\Game\\common.h",
               "RelativeDocumentMoniker": "Game\\common.h",
               "ToolTip": "D:\\Backup\\Github Repository\\SDL-Game\\Game\\common.h",
               "RelativeToolTip": "Game\\common.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAdAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-12-02T10:30:18.976Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "main.c",
               "DocumentMoniker": "D:\\Backup\\Github Repository\\SDL-Game\\Game\\main.c",
               "RelativeDocumentMoniker": "Game\\main.c",
               "ToolTip": "D:\\Backup\\Github Repository\\SDL-Game\\Game\\main.c",
               "RelativeToolTip": "Game\\main.c",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAAAEIAAAABAAAA",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAD4AAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-11-30T08:22:24.405Z"
+              "WhenOpened": "2024-11-30T08:22:24.405Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "structs.h",
               "DocumentMoniker": "D:\\Backup\\Github Repository\\SDL-Game\\Game\\structs.h",
               "RelativeDocumentMoniker": "Game\\structs.h",
@@ -268,7 +269,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "input.c",
               "DocumentMoniker": "D:\\Backup\\Github Repository\\SDL-Game\\Game\\input.c",
               "RelativeDocumentMoniker": "Game\\input.c",
@@ -293,7 +294,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "draw.c",
               "DocumentMoniker": "D:\\Backup\\Github Repository\\SDL-Game\\Game\\draw.c",
               "RelativeDocumentMoniker": "Game\\draw.c",

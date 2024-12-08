@@ -12,6 +12,8 @@ list_t* create_list()
 	new_list->head = NULL;
 	new_list->tail = NULL;
 	new_list->count = 0;
+
+	return new_list;
 }
 
 int insert_at_head(void* data, list_t* list)
@@ -29,24 +31,18 @@ int insert_at_head(void* data, list_t* list)
 		return 0;
 	}
 
-	// Check if list is empty
-	if (list->head == NULL && list->tail == NULL)
-	{
-		list->head = new_node;
-		list->tail = new_node;
-		new_node->next = NULL;
-		new_node->prev = NULL;
-		list->count += 1;
-
-		return 1;
-	}
-
-	// List is not empty
+	new_node->data = data;
 	new_node->next = list->head;
-	list->head->prev = new_node;
 	new_node->prev = NULL;
+
+	if (list->head)
+		list->head->prev = new_node;
+	else
+		list->tail = new_node;		// First node in the list
+
 	list->head = new_node;
-	list->count += 1;
+	list->count++;
+	
 	return 1;
 }
 
@@ -65,67 +61,81 @@ int insert_at_tail(void* data, list_t* list)
 		return 0;
 	}
 
-	// Check if list is empty
-	if (list->head == NULL && list->tail == NULL)
-	{
-		free(new_node);
-		return insert_at_head(data, list);
-	}
-
-	// List is not empty
-	list->tail->next = new_node;
+	new_node->data = data;
 	new_node->prev = list->tail;
+	new_node->next = NULL;
+
+	if (list->tail)
+		list->tail->next = new_node;
+	else
+		list->head = new_node;		// First node in the list
+
 	list->tail = new_node;
-	list->count += 1;
+	list->count++;
 	return 1;
 }
 
-int remove_at_head(void* data, list_t* list)
+void* remove_at_head(list_t* list)
 {
-	if (!list)
+	if (!list || !list->head)
 	{
 		printf("The provided pointer to list is not valid\n");
-		return 0;
+		return NULL;
 	}
 
-	// Check if list is empty
-	if (list->head == NULL && list->tail == NULL)
-	{
-		printf("Cannot remove anything from an empty list\n");
-		return 0;
-	}
-
-	// List is not empty
 	node_t* old_head = list->head;
-	node_t* second_node = list->head->next;
-	second_node->prev = NULL;
-	list->head = second_node;
-	list->count -= 1;
+	void* data = list->head->data;
+
+	list->head = old_head->next;
+	if (list->head)
+		list->head->prev = NULL;
+	else
+		list->tail = NULL;
+
 	free(old_head);
-	return 1;
+	list->count--;
+
+	return data;
 }
 
-int remove_at_tail(void* data, list_t* list)
+void* remove_at_tail(list_t* list)
+{
+	if (!list || !list->tail)
+	{
+		printf("The provided pointer to list is not valid\n");
+		return NULL;
+	}
+
+	node_t* old_tail = list->tail;
+	void* data = old_tail->data;
+
+	list->tail = old_tail->prev;
+	if (list->tail)
+		list->tail->next = NULL;
+	else
+		list->head = NULL;
+
+	free(old_tail);
+	list->count--;
+	return data;
+}
+
+void destroy_list(list_t* list)
 {
 	if (!list)
 	{
-		printf("The provided pointer to list is not valid\n");
-		return 0;
+		printf("Cannot destroy list pointed by invalid pointer\n");
+		return;
 	}
 
-	// Check if list is empty
-	if (list->head == NULL && list->tail == NULL)
+	node_t* current = list->head;
+	while (current) 
 	{
-		printf("Cannot remove anything from an empty list\n");
-		return 0;
+		node_t* next = current->next;
+		free(current->data);	// Free the current node's data
+		free(current);			// Free the current node
+		current = next;
 	}
 
-	// List is not empty
-	node_t* old_tail = list->tail;
-	node_t* second_last_node = old_tail->prev;
-	second_last_node->next = NULL;
-	list->tail = second_last_node;
-	list->count -= 1;
-	free(old_tail);
-	return 1;
+	free(list);
 }

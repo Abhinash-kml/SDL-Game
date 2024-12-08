@@ -7,6 +7,7 @@
 #include "input.h"
 #include "resources.h"
 #include "shutdown.h"
+#include "list.h"
 
 int main(int argc, char* argv[]) 
 {
@@ -53,6 +54,26 @@ int main(int argc, char* argv[])
         bRunning = false;
     }
 
+
+    // test
+    list_t* list = create_list();
+    for (size_t i = 0; i < 10; ++i)
+    {
+        int* ptr = (int*)malloc(sizeof(int));
+        *ptr = i;
+        insert_at_tail(ptr, list);
+    }
+
+    node_t* temp = list->head;
+    while (temp != NULL)
+    {
+        static int i = 1;
+        printf("list %i val = %i\n", i, *(int*)temp->data);
+        temp = temp->next;
+        i++;
+    }
+
+    destroy_list(list);
 
     while (bRunning)
     {

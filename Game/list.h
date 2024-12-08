@@ -5,8 +5,8 @@
 typedef struct Node
 {
 	void* data;
-	node_t* next;
-	node_t* prev;
+	struct node_t* next;
+	struct node_t* prev;
 } node_t;
 
 typedef struct List
@@ -19,5 +19,7 @@ typedef struct List
 list_t* create_list();
 int insert_at_head(void* data, list_t* list);
 int insert_at_tail(void* data, list_t* list);
-int remove_at_head(void* data, list_t* list);
-int remove_at_tail(void* data, list_t* list);
+void* remove_at_head(list_t* list);
+void* remove_at_tail(list_t* list);
+
+void destroy_list(list_t* list);
