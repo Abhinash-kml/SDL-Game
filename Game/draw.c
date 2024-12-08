@@ -21,7 +21,8 @@ void present_scene(app_t* app)
 {
 	SDL_RenderTexture(app->renderer, &app->resources->textures[IMAGE_BACKGROUND]->m_Texture, NULL, NULL);
 	render_texture(app, &app->resources->textures[IMAGE_PLAYER], app->mouse_data->x - 64.f, app->mouse_data->y - 64.f, 0.0);
-	render_font(app, "HELLO WORLD");
+	sprintf_s(app->buffer, sizeof(app->buffer), "Mouse Position: %f - %f", app->mouse_data->x, app->mouse_data->y);
+	render_font(app, app->buffer);
 	SDL_RenderPresent(app->renderer);
 }
 
@@ -42,9 +43,8 @@ void render_font(app_t* app, const char* message)
 		return;
 	}
 
-	SDL_Rect dest_rect = { 0, 0, surface->w, surface->h };
+	SDL_FRect dest_rect = { 0.f, 0.f, 400.f, 60.f };
 	SDL_DestroySurface(surface);
 
-	printf("%i | %i\n", dest_rect.w, dest_rect.h);	// Text rendering doesn't work with destination rectangle
-	SDL_RenderTexture(app->renderer, texture, NULL, NULL);	// FIXME: Fix me
+	SDL_RenderTexture(app->renderer, texture, NULL, &dest_rect);	// FIX: (Always use SDL_FRect with RenderTexture)
 }

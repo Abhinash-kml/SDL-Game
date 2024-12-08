@@ -32,6 +32,12 @@
     <ClCompile Include="resources.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="spawn_manager.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="list.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -59,6 +65,12 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="resources.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spawn_manager.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="list.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,6 +1,5 @@
 #pragma once
 
-#include "common.h"
 #include "input.h"
 
 void process_input(bool* bRunning, app_t* app)

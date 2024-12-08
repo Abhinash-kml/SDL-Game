@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -22,9 +22,11 @@
     <ClCompile Include="draw.c" />
     <ClCompile Include="init.c" />
     <ClCompile Include="input.c" />
+    <ClCompile Include="list.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="resources.c" />
     <ClCompile Include="shutdown.c" />
+    <ClCompile Include="spawn_manager.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="common.h" />
@@ -32,9 +34,11 @@
     <ClInclude Include="draw.h" />
     <ClInclude Include="init.h" />
     <ClInclude Include="input.h" />
+    <ClInclude Include="list.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="resources.h" />
     <ClInclude Include="shutdown.h" />
+    <ClInclude Include="spawn_manager.h" />
     <ClInclude Include="structs.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

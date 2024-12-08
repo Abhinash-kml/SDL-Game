@@ -25,6 +25,19 @@ typedef struct MouseData
 	float deltaY;
 } mouse_data_t;
 
+typedef struct EnemyPool
+{
+	SDL_Texture* enemies;
+} enemy_pool_t;
+
+typedef struct WaveManager
+{
+	enemy_pool_t enemy_pool;
+	int enemy_per_wave[10];
+	int current_wave;
+	int current_wave_ended;
+} wave_manager_t;
+
 typedef struct App
 {
 	SDL_Renderer* renderer;
@@ -34,4 +47,5 @@ typedef struct App
 	int audio_channel_count;
 	mouse_data_t* mouse_data;
 	TTF_Font* font;
+	char buffer[200];
 } app_t;

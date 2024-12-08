@@ -1,5 +1,4 @@
 #include "resources.h"
-#include "common.h"
 
 const char* images[MAX_IMAGES] = {
 	"textures/background.png",
