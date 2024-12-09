@@ -36,7 +36,21 @@ typedef struct WaveManager
 	int enemy_per_wave[10];
 	int current_wave;
 	int current_wave_ended;
+	int current_enemy_num;
+	SDL_Texture* current_enemies[3];
 } wave_manager_t;
+
+typedef struct Vector2
+{
+	float x;
+	float y;
+} vector2_t;
+
+typedef struct Player
+{
+	SDL_Texture* texture;
+	vector2_t position;
+} player_t;
 
 typedef struct App
 {

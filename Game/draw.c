@@ -4,10 +4,11 @@
 void render_texture(app_t* app, texture_t* texture, float x, float y, double degree)
 {
 	// Set texture position
-	SDL_FRect destination_rectangle = { x, y, texture->m_Texture->w, texture->m_Texture->h };
+	float w, h;
+	SDL_GetTextureSize(app->resources->textures[IMAGE_PLAYER], &w, &h);
 
-	// Render the texture
-	//SDL_RenderTexture(app->renderer, texture->m_Texture, NULL, &destinationRectable);
+
+	SDL_FRect destination_rectangle = { x, y, w, h };
 	SDL_RenderTextureRotated(app->renderer, texture->m_Texture, NULL, &destination_rectangle, degree, NULL, SDL_FLIP_NONE);
 }
 
@@ -18,11 +19,20 @@ void prepare_scene(app_t* app)
 }
 
 void present_scene(app_t* app)
-{
-	SDL_RenderTexture(app->renderer, &app->resources->textures[IMAGE_BACKGROUND]->m_Texture, NULL, NULL);
-	render_texture(app, &app->resources->textures[IMAGE_PLAYER], app->mouse_data->x - 64.f, app->mouse_data->y - 64.f, 0.0);
-	sprintf_s(app->buffer, sizeof(app->buffer), "Mouse Position: %f - %f", app->mouse_data->x, app->mouse_data->y);
-	render_font(app, app->buffer);
+{										
+	SDL_RenderTexture(app->renderer, &app->resources->textures[IMAGE_BACKGROUND]->m_Texture, NULL, NULL);	// EXPLAIN: Why working with addressof operator and not without it ?
+	render_texture(app, &app->resources->textures[IMAGE_PLAYER], app->mouse_data->x - 64.f, app->mouse_data->y - 64.f, 0.0);	// FIXME: Why working when passed with addressof operator, which it shouldn't
+
+	for (size_t i = 0; i < 3; ++i)
+	{
+		float width = 100.f;
+		float height = 100.f;
+		SDL_FRect dst_rect = { 20.f + i * 400.f, 0.f, width, height };
+		SDL_RenderTexture(app->renderer, app->resources->textures[IMAGE_PLAYER], NULL, &dst_rect);
+	}
+
+	//sprintf_s(app->buffer, sizeof(app->buffer), "Mouse Position: %f - %f", app->mouse_data->x, app->mouse_data->y);
+	//render_font(app, app->buffer);
 	SDL_RenderPresent(app->renderer);
 }
 

@@ -1,9 +1,8 @@
-﻿  list.c
-D:\Backup\Github Repository\SDL-Game\Game\list.c(35,17): warning C4133: '=': incompatible types - from 'node_t *' to 'node_t *'
-D:\Backup\Github Repository\SDL-Game\Game\list.c(39,20): warning C4133: '=': incompatible types - from 'node_t *' to 'node_t *'
-D:\Backup\Github Repository\SDL-Game\Game\list.c(65,17): warning C4133: '=': incompatible types - from 'node_t *' to 'node_t *'
-D:\Backup\Github Repository\SDL-Game\Game\list.c(69,20): warning C4133: '=': incompatible types - from 'node_t *' to 'node_t *'
-D:\Backup\Github Repository\SDL-Game\Game\list.c(89,13): warning C4133: '=': incompatible types - from 'node_t *' to 'node_t *'
-D:\Backup\Github Repository\SDL-Game\Game\list.c(112,13): warning C4133: '=': incompatible types - from 'node_t *' to 'node_t *'
-D:\Backup\Github Repository\SDL-Game\Game\list.c(134,11): warning C4133: 'initializing': incompatible types - from 'node_t *' to 'node_t *'
+﻿  draw.c
+D:\Backup\Github Repository\SDL-Game\Game\draw.c(8,45): warning C4133: 'function': incompatible types - from 'texture_t *' to 'SDL_Texture *'
+D:\Backup\Github Repository\SDL-Game\Game\draw.c(25,89): warning C4047: 'function': 'SDL_Texture *' differs in levels of indirection from 'SDL_Texture **'
+D:\Backup\Github Repository\SDL-Game\Game\draw.c(25,35): warning C4024: 'SDL_RenderTexture': different types for formal and actual parameter 2
+D:\Backup\Github Repository\SDL-Game\Game\draw.c(26,61): warning C4047: 'function': 'texture_t *' differs in levels of indirection from 'texture_t **'
+D:\Backup\Github Repository\SDL-Game\Game\draw.c(26,22): warning C4024: 'render_texture': different types for formal and actual parameter 2
+D:\Backup\Github Repository\SDL-Game\Game\draw.c(33,60): warning C4133: 'function': incompatible types - from 'texture_t *' to 'SDL_Texture *'
   Game.vcxproj -> D:\Backup\Github Repository\SDL-Game\x64\Debug\Game.exe
